@@ -442,5 +442,3 @@ function baseurl() {
 		;;
 	esac
 }
-
-url=$(baseurl "$1")

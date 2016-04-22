@@ -8,8 +8,6 @@ function unknownstop() {
 	(>&2 echo "unknown stop")
 }
 
-source "/usr/share/efa-bw/baseurls"
-
 while getopts h o; do
 	case $o in
 	h)
@@ -26,6 +24,9 @@ done
 shift $(expr $OPTIND - 1)
 
 [[ 0 -eq $# ]] && usage && exit 1
+
+source "/usr/share/efa-bw/baseurls"
+url=$(baseurl "$1")
 
 [[ -z $url ]] && unknownstop && exit 2
 shift
