@@ -1,0 +1,61 @@
+#!/bin/sh
+
+function usage() {
+	echo "Usage: $0 [-h] stop [line[,line]]"
+}
+
+function unknownstop() {
+	(>&2 echo "unknown stop")
+}
+
+source "/usr/share/efa-bw/baseurls"
+
+while getopts h o; do
+	case $o in
+	h)
+		usage
+		exit
+		;;
+	[?])
+		usage
+		exit 3
+		;;
+	esac
+done
+
+shift $(expr $OPTIND - 1)
+
+[[ 0 -eq $# ]] && usage && exit 1
+
+[[ -z $url ]] && unknownstop && exit 2
+shift
+
+date=$(date --rfc-3339=seconds | sed -e 's/-//g' -e 's/ .*//')
+time=$(date --rfc-3339=seconds | sed -e 's/[^ ]* //' -e 's/://' -e 's/:.*//')
+
+url="${url}itdLPxx_dateTime=${date}:${time}&itdDate=${date}&itdTime=${time}"
+
+separator="###"
+
+pattern="^"
+
+[[ -z $1 ]] || pattern="$pattern$(echo $1 | sed -e 's/^\([^,]*\)/\1 /' -e 's/,\([^,]*\)/|^\1\\W/g')"
+
+file=$(mktemp)
+
+path="/html/body/div[1]/div/div[2]/div[1]/div/div[4]/form[1]/div/div[3]/div/div[2]/table/tbody/tr"
+cmd="xmllint --xmlout --html $file"
+
+function entry () {
+	$cmd --xpath "$path[$1]/td[$2]" 2> /dev/null | sed 's/<[^>]*>//g'
+}
+
+curl $url > $file 2>/dev/null
+
+for i in $(seq 3 $(echo "cd $path" | $cmd --shell 2>&1 | sed -n 's/.*is a \([0-9]*\)* Node Set/\1/p')); do
+	[[ 0 -eq $(entry $i 5 | grep -E "$pattern" | wc -l) ]] && continue
+	echo $(entry $i 3)$separator$(entry $i 6) | recode html..utf8
+done | column -ts "$separator"
+
+rm $file
+

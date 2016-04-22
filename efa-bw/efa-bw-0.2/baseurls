@@ -1,0 +1,446 @@
+#!/bin/sh
+
+function baseurl() {
+	case $1 in
+	"Am Kanalweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007304&type_dm=any&line=kvv:24073:E:H:j16&line=kvv:24073:E:R:j16&"
+		;;
+	"Andreas-Hofer-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006012&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&"
+		;;
+	"Arbeitsagentur")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000064&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&"
+		;;
+	"Augartenstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000074&type_dm=any&line=kvv:24010:E:H:j16&"
+		;;
+	"August-Bebel-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001104&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:24074:E:H:j16&"
+		;;
+	"Bannwaldallee")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000606&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Barbaraweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007019&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Barbarossaplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005003&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&"
+		;;
+	"Belchenplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005205&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Benzstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005515&type_dm=any&line=kvv:24055:E:R:j16&"
+		;;
+	"Berliner Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007017&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Bernsteinstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006209&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:24083:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Binger Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007412&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Birkenweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006006&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&"
+		;;
+	"Blohnstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006002&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Breite Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005005&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24051:E:H:j16&line=kvv:24051:E:R:j16&"
+		;;
+	"Büchiger Allee")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7003004&type_dm=any&line=kvv:24030:E:H:j16&line=kvv:24030:E:R:j16&"
+		;;
+	"Dammerstock")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001206&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Duale Hochschule")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000012&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24071:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Dunantstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000310&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&"
+		;;
+	"Durlacher Tor / KIT-Campus Süd")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000003&type_dm=any&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03094:E:H:j16&line=kvv:03094:E:R:j16&"
+		;;
+	"Durmersheimer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006205&type_dm=any&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Ebertstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000091&type_dm=any&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&"
+		;;
+	"Eckenerstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000201&type_dm=any&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Edelbergstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006010&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:24083:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Eichelbergstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006208&type_dm=any&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:24083:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Emil-Gött-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7003014&type_dm=any&line=kvv:24030:E:H:j16&"
+		;;
+	"Entenfang")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000051&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24060:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:24070:E:R:j16&line=kvv:31222:C:H:j16&line=kvv:17064:E:H:j16&"
+		;;
+	"Erlenweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001211&type_dm=any&line=kvv:17053:E:H:j16&"
+		;;
+	"Ettlinger Tor")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000071&type_dm=any&line=kvv:24010:E:R:j16&"
+		;;
+	"Europahalle/Europabad")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000605&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Europaplatz (Kaiserstraße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000031&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03095:E:H:j16&"
+		;;
+	"Europaplatz (Karlstraße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000060&type_dm=any&line=kvv:22011:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Europaplatz (Sparkasse)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000059&type_dm=any&line=kvv:24073:E:H:j16&"
+		;;
+	"Feierabendweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000523&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Frankenthaler Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007405&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Gebhardstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005004&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24051:E:H:j16&line=kvv:24051:E:R:j16&"
+		;;
+	"Germersheimer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007016&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Gottesauer Platz / BGV")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000006&type_dm=any&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24042:E:R:j16&"
+		;;
+	"Griesbachstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005513&type_dm=any&line=kvv:24055:E:H:j16&"
+		;;
+	"Grünwinkler Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005007&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24051:E:H:j16&line=kvv:24051:E:R:j16&line=kvv:03114:E:R:j16&"
+		;;
+	"Händelstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000044&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Hardecksiedlung")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000607&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&"
+		;;
+	"Hauptbahnhof")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000090&type_dm=any&MOT=0&line=kvv:22014:E:R:j16&line=kvv:22015:E:R:j16&line=kvv:22031:E:H:j16&line=kvv:22031:E:R:j16&line=kvv:22032:E:H:j16&line=kvv:22032:E:R:j16&line=ddb:92V01: :R:j16&line=ddb:92V02: :R:j16&line=ddb:92V03: :R:j16&"
+		;;
+	"Hauptfriedhof")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000402&type_dm=any&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03094:E:H:j16&line=kvv:03094:E:R:j16&line=kvv:08125:C:H:j16&line=kvv:08125:C:R:j16&"
+		;;
+	"Haus Bethlehem")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001106&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&"
+		;;
+	"Hbf Vorplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000089&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:24010:E:H:j16&line=kvv:24044:E:R:j16&line=kvv:24047:E:R:j16&line=kvv:24050:E:H:j16&line=kvv:24055:E:H:j16&line=kvv:24062:E:H:j16&line=kvv:24090:M:H:j16&line=kvv:03114:E:H:j16&"
+		;;
+	"Heidehof")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007009&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24070:E:H:j16&line=kvv:24071:E:H:j16&line=kvv:24071:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Herrenstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000099&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&line=kvv:03095:E:H:j16&"
+		;;
+	"Hertzstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000522&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Hirtenweg/Technologiepark")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000403&type_dm=any&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Holtzstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005509&type_dm=any&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&"
+		;;
+	"Hornisgrindestraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006007&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Hübschstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000505&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Junker-u.-Ruh-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005514&type_dm=any&line=kvv:24055:E:R:j16&"
+		;;
+	"Kaiserplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000036&type_dm=any&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&line=kvv:03095:E:H:j16&"
+		;;
+	"Kaiserslauterner Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007013&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Kärcherstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007021&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&"
+		;;
+	"Karl-Wilhelm-Platz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000401&type_dm=any&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24030:E:H:j16&line=kvv:03094:E:H:j16&line=kvv:03094:E:R:j16&"
+		;;
+	"Karlstor")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000061&type_dm=any&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&"
+		;;
+	"Knielinger Allee")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001103&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&"
+		;;
+	"Kolpingplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000063&type_dm=any&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&"
+		;;
+	"Kongresszentrum")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000073&type_dm=any&line=kvv:24010:E:H:j16&"
+		;;
+	"Konzerthaus")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000510&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:24010:E:R:j16&"
+		;;
+	"Kronenplatz (Fritz-Erler-Straße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000080&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Kronenplatz (Kaiserstraße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000002&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03094:E:H:j16&line=kvv:03094:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Kühler Krug")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000504&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Kunstakademie / Hochschule")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007003&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Kurt-Schumacher-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001105&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&"
+		;;
+	"Kußmaulstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000521&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Lameyplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000058&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:17064:E:H:j16&"
+		;;
+	"Landauer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007404&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Landesbausparkasse")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000604&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Landgrabenstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005008&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:03114:E:R:j16&"
+		;;
+	"Lessingstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000507&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&"
+		;;
+	"Lilienthalstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000008&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Linkenheimer Tor")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007302&type_dm=any&line=kvv:24073:E:H:j16&line=kvv:24073:E:R:j16&"
+		;;
+	"Links der Alb")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005206&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Liststraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005516&type_dm=any&line=kvv:24055:E:R:j16&"
+		;;
+	"Lorenzstraße/ZKM")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005505&type_dm=any&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&"
+		;;
+	"Madenburgweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007018&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Marktplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000001&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21001:N:R:j16&line=kvv:21002:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03094:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03114:E:H:j16&"
+		;;
+	"Mathystraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000062&type_dm=any&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&"
+		;;
+	"Maxau")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001700&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&"
+		;;
+	"Mühlburg West")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000103&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&"
+		;;
+	"Mühlburger Feld")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000503&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&"
+		;;
+	"Mühlburger Tor (Grashofstraße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000321&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Mühlburger Tor (Kaiserallee)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000049&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Neckarplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005203&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Neue Anlage Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005006&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24051:E:H:j16&line=kvv:24051:E:R:j16&line=kvv:03114:E:R:j16&"
+		;;
+	"Neureuter Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000524&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Nürnberger Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005207&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Ostendstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000622&type_dm=any&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&"
+		;;
+	"Otto-Sachs-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000508&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&"
+		;;
+	"Pastor-Felke-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7003003&type_dm=any&line=kvv:24030:E:H:j16&line=kvv:24030:E:R:j16&"
+		;;
+	"Petergraben")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005015&type_dm=any&line=kvv:24051:E:H:j16&line=kvv:24051:E:R:j16&"
+		;;
+	"Pfannkuchstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000316&type_dm=any&line=kvv:03095:E:R:j16&"
+		;;
+	"Philipp-Reis-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000621&type_dm=any&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&"
+		;;
+	"Philippstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000045&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Poststraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000098&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:24010:E:H:j16&line=kvv:24047:E:H:j16&line=kvv:24047:E:R:j16&"
+		;;
+	"Rheinhafen")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000501&type_dm=any&line=kvv:22015:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21004:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Rheinhafen Nord")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000026&type_dm=any&line=kvv:17064:E:H:j16&"
+		;;
+	"Rheinhafenstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000203&type_dm=any&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Rintheimer Querallee")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7003005&type_dm=any&line=kvv:24030:E:H:j16&line=kvv:24030:E:R:j16&"
+		;;
+	"Rintheimer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000311&type_dm=any&line=kvv:21004:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Rüppurrer Tor")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000085&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Schillerstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000040&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Schloss Gottesaue")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000624&type_dm=any&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&"
+		;;
+	"Schloss Rüppurr")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001207&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:17053:E:R:j16&"
+		;;
+	"Schützenhaus")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007303&type_dm=any&line=kvv:24073:E:H:j16&line=kvv:24073:E:R:j16&"
+		;;
+	"Schweigener Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007014&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Schwimmschulweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006213&type_dm=any&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Sinner (Durmersh. Straße)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006008&type_dm=any&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Sinner (Zeppelinstr.)")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006004&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&"
+		;;
+	"Sophienstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000602&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"St. Josefs-Kirche")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006206&type_dm=any&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"St. Vincentius Krankenhaus")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005508&type_dm=any&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&"
+		;;
+	"Städt. Klinikum Moltkestr.")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7001101&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Stadtwerke")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000315&type_dm=any&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Starckstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000101&type_dm=any&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&"
+		;;
+	"Staufenbergweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006011&type_dm=any&line=kvv:24060:E:R:j16&"
+		;;
+	"Stephanienbad")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005202&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Stresemannstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007402&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Studentenhaus")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7003002&type_dm=any&line=kvv:24030:E:H:j16&"
+		;;
+	"Südendschule")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005504&type_dm=any&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&"
+		;;
+	"Synagoge")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000005&type_dm=any&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Tivoli")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000084&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21004:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Trierer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007406&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Tullastraße / Verkehrsbetriebe")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000007&type_dm=any&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:08125:C:R:j16&"
+		;;
+	"Untermühlstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000010&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Vogesenbrücke")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000102&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Volkswohnung / Staatstheater")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000072&type_dm=any&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:24010:E:R:j16&"
+		;;
+	"Wattkopfstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006009&type_dm=any&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Weiherhof")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7005204&type_dm=any&line=kvv:24052:E:H:j16&line=kvv:24052:E:R:j16&"
+		;;
+	"Weinbrennerplatz")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000603&type_dm=any&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21005:E:H:j16&line=kvv:21005:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&line=kvv:24055:E:H:j16&line=kvv:24055:E:R:j16&line=kvv:03095:E:H:j16&line=kvv:03095:E:R:j16&"
+		;;
+	"Weinweg")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000009&type_dm=any&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21001:N:H:j16&line=kvv:21001:N:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Weißenburger Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007015&type_dm=any&line=kvv:24070:E:H:j16&line=kvv:24070:E:R:j16&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&line=kvv:03093:E:H:j16&line=kvv:03093:E:R:j16&"
+		;;
+	"Weißes Haus")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007305&type_dm=any&line=kvv:24073:E:H:j16&line=kvv:24073:E:R:j16&"
+		;;
+	"Welfenstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006218&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&"
+		;;
+	"Werderstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000083&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22014:E:H:j16&line=kvv:22014:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:22041:E:H:j16&line=kvv:22041:E:R:j16&line=kvv:22051:E:H:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"Westbahnhof Karlsruhe")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006005&type_dm=any&MOT=0&line=kvv:22051:E:H:j16&line=kvv:22051:E:R:j16&line=kvv:24060:E:H:j16&line=kvv:24060:E:R:j16&"
+		;;
+	"Wilhelm-Kolb-Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7007403&type_dm=any&line=kvv:24074:E:H:j16&line=kvv:24074:E:R:j16&"
+		;;
+	"Windeckstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7006215&type_dm=any&line=kvv:24050:E:H:j16&line=kvv:24050:E:R:j16&line=kvv:24062:E:H:j16&line=kvv:24062:E:R:j16&line=kvv:03114:E:R:j16&"
+		;;
+	"Wolfartsweierer Straße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000623&type_dm=any&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:24042:E:H:j16&line=kvv:24042:E:R:j16&"
+		;;
+	"Yorckstraße")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000041&type_dm=any&line=kvv:22010:E:H:j16&line=kvv:22010:E:R:j16&line=kvv:22015:E:H:j16&line=kvv:22015:E:R:j16&line=kvv:22052:E:H:j16&line=kvv:22052:E:R:j16&line=kvv:21012:E:H:j16&line=kvv:21012:E:R:j16&line=kvv:22011:E:H:j16&line=kvv:22011:E:R:j16&line=kvv:21001:E:H:j16&line=kvv:21001:E:R:j16&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21003:E:H:j16&line=kvv:21003:E:R:j16&line=kvv:21004:E:H:j16&line=kvv:21006:E:H:j16&line=kvv:21006:E:R:j16&line=kvv:21007:E:H:j16&line=kvv:21007:E:R:j16&"
+		;;
+	"ZKM")
+		echo "http://www.efa-bw.de/nvbw/XSLT_DM_REQUEST?language=de&itdLPxx_frames=&dmMacro=nvbwLink&name_dm=7000065&type_dm=any&line=kvv:21002:E:H:j16&line=kvv:21002:E:R:j16&line=kvv:21002:N:H:j16&line=kvv:21002:N:R:j16&"
+		;;
+	esac
+}
+
+url=$(baseurl "$1")
