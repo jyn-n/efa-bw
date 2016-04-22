@@ -2,8 +2,8 @@
 
 local stops lines
 
-stops=$(sed 's/^/"/' < /usr/local/share/efa-bw/stops | sed 's/$/" /' | tr -d '\n')
-lines=$(sed 's/$/ /' < /usr/local/share/efa-bw/lines | tr -d '\n')
+stops=$(sed 's/^/"/' < /usr/share/efa-bw/stops | sed 's/$/" /' | tr -d '\n')
+lines=$(sed 's/$/ /' < /usr/share/efa-bw/lines | tr -d '\n')
 
 local -a args
 
