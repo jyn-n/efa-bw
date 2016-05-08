@@ -1,0 +1,1086 @@
+#!/bin/sh
+
+function stopid() {
+case $1 in
+	"Beiertheim West")
+		echo "7006217"
+		;;
+	"Bergwald Mitte")
+		echo "7004409"
+		;;
+	"Bergwaldschule")
+		echo "7004415"
+		;;
+	"Elsa-Brändström-Straße")
+		echo "7004414"
+		;;
+	"Fridtjof-Nansen-Straße")
+		echo "7004412"
+		;;
+	"Hooverstraße")
+		echo "7004413"
+		;;
+	"Bulach Friedhof")
+		echo "7005016"
+		;;
+	"Bulach West")
+		echo "7006216"
+		;;
+	"Altrheinbrücke")
+		echo "7000307"
+		;;
+	"Ankerstraße")
+		echo "7000303"
+		;;
+	"Aug.-Dosenbach-Straße")
+		echo "7006220"
+		;;
+	"Dornröschenweg")
+		echo "7000206"
+		;;
+	"Hammäcker")
+		echo "7000208"
+		;;
+	"Hammweg")
+		echo "7000305"
+		;;
+	"Karl-Delisle-Straße")
+		echo "7000205"
+		;;
+	"Kirchplatz")
+		echo "7000304"
+		;;
+	"Mauerweg")
+		echo "7000302"
+		;;
+	"Am Heegwald")
+		echo "7003121"
+		;;
+	"An der Fayence")
+		echo "7003120"
+		;;
+	"Auer Straße/Dr. Willmar Schwabe")
+		echo "7000011"
+		;;
+	"Auf der Breit")
+		echo "7003112"
+		;;
+	"August-Macke-Straße")
+		echo "7004608"
+		;;
+	"Blattwiesenstraße")
+		echo "7004304"
+		;;
+	"Durlach Brühlstraße Mitte")
+		echo "7004305"
+		;;
+	"Dieselstraße")
+		echo "7004204"
+		;;
+	"Durlach Bahnhof")
+		echo "7000801"
+		;;
+	"Dürrenwettersbacher Straße")
+		echo "7004407"
+		;;
+	"Eisenhafengrund")
+		echo "7002304"
+		;;
+	"Ellmendinger Straße")
+		echo "7004495"
+		;;
+	"Erich-Heckel-Straße")
+		echo "7004607"
+		;;
+	"Ernst-Barlach-Straße")
+		echo "7004604"
+		;;
+	"Durlach Friedhof")
+		echo "7002002"
+		;;
+	"Friedrichschule")
+		echo "7000016"
+		;;
+	"Geigersberg")
+		echo "7004606"
+		;;
+	"Gritznerstraße")
+		echo "7004499"
+		;;
+	"Gudrunstraße")
+		echo "7004206"
+		;;
+	"Hubstraße")
+		echo "7001510"
+		;;
+	"Karl-Weysser-Straße")
+		echo "7000019"
+		;;
+	"Käthe-Kollwitz-Straße")
+		echo "7004603"
+		;;
+	"Kieselweg")
+		echo "7004009"
+		;;
+	"Killisfeld")
+		echo "7004008"
+		;;
+	"Killisfeldstraße")
+		echo "7004497"
+		;;
+	"Lerchenberg")
+		echo "7002303"
+		;;
+	"Lußstraße")
+		echo "7004602"
+		;;
+	"Max-Beckmann-Straße")
+		echo "7004605"
+		;;
+	"Maybachstraße")
+		echo "7004203"
+		;;
+	"Neßlerstraße")
+		echo "7002004"
+		;;
+	"Ochsentorstraße")
+		echo "7003114"
+		;;
+	"Ostmarkstraße")
+		echo "7004494"
+		;;
+	"Ottostraße")
+		echo "7004205"
+		;;
+	"Paracelsusklinik")
+		echo "7004002"
+		;;
+	"Parkschlössle")
+		echo "7004503"
+		;;
+	"Rommelstraße")
+		echo "7004504"
+		;;
+	"Durlach Schlesier Straße (West)")
+		echo "7004493"
+		;;
+	"Schlesier Straße (Ost)")
+		echo "7004302"
+		;;
+	"Schlossplatz")
+		echo "7000017"
+		;;
+	"Steiermärker Straße")
+		echo "7004496"
+		;;
+	"Thomashof")
+		echo "7002305"
+		;;
+	"Tiefbauamt")
+		echo "7004202"
+		;;
+	"Tiefentalstraße")
+		echo "7004308"
+		;;
+	"Turmberg")
+		echo "7000018"
+		;;
+	"Wachhausstraße")
+		echo "7004007"
+		;;
+	"Zündhütle")
+		echo "7004492"
+		;;
+	"Am Schwalbenloch")
+		echo "7000034"
+		;;
+	"An der Pfinz")
+		echo "7002112"
+		;;
+	"Augustenburg")
+		echo "7002003"
+		;;
+	"Grötzingen Bahnhof")
+		echo "7001521"
+		;;
+	"Büchelbergstraße")
+		echo "7002107"
+		;;
+	"Eisenbahnstraße")
+		echo "7002111"
+		;;
+	"Emil-Arheit-Halle")
+		echo "7002102"
+		;;
+	"Fikentscherstraße")
+		echo "7000033"
+		;;
+	"Fröbelstraße")
+		echo "7002103"
+		;;
+	"Greschbachstraße")
+		echo "7003213"
+		;;
+	"Gustav-Hofmann-Straße")
+		echo "7002109"
+		;;
+	"Grötzingen Heilig-Kreuz-Kirche")
+		echo "7001527"
+		;;
+	"Im Sonnental")
+		echo "7001644"
+		;;
+	"Karl-Leopold-Straße")
+		echo "7002105"
+		;;
+	"Krappmühlenweg")
+		echo "7001600"
+		;;
+	"LTZ Augustenberg")
+		echo "7002016"
+		;;
+	"Oberausstraße")
+		echo "7001525"
+		;;
+	"Ohmstraße")
+		echo "7003212"
+		;;
+	"Paul-Rein-Straße")
+		echo "7000032"
+		;;
+	"Pfinzhof")
+		echo "7003211"
+		;;
+	"Grötzingen Rathaus")
+		echo "7002104"
+		;;
+	"Ringelberghohl")
+		echo "7002110"
+		;;
+	"Rossweid")
+		echo "7003214"
+		;;
+	"Staigstraße")
+		echo "7002108"
+		;;
+	"Vogelsang")
+		echo "7000035"
+		;;
+	"Weidbruch")
+		echo "7003118"
+		;;
+	"Heinz-Barth-Schule")
+		echo "7091004"
+		;;
+	"Grünwettersbach Mitte")
+		echo "7004510"
+		;;
+	"Grünwettersbach Rathaus")
+		echo "7004509"
+		;;
+	"Seniorenresidenz")
+		echo "7004511"
+		;;
+	"Grünwinkel Friedhof")
+		echo "7006003"
+		;;
+	"An der Tagweide")
+		echo "7003106"
+		;;
+	"Hagsfeld Bahnhof")
+		echo "7003102"
+		;;
+	"Brückenstraße")
+		echo "7003206"
+		;;
+	"Elfmorgenbruch")
+		echo "7003117"
+		;;
+	"Fächerbad")
+		echo "7000405"
+		;;
+	"Geroldsäcker")
+		echo "7000233"
+		;;
+	"Hallesche Allee")
+		echo "7003302"
+		;;
+	"Jenaer Straße")
+		echo "7003301"
+		;;
+	"Julius-Bender-Straße")
+		echo "7003104"
+		;;
+	"Neue Wiesen")
+		echo "7003108"
+		;;
+	"Oberdorfstraße")
+		echo "7003103"
+		;;
+	"Pfizer")
+		echo "7003105"
+		;;
+	"Printzstraße")
+		echo "7003107"
+		;;
+	"Reitschulschlag")
+		echo "7003013"
+		;;
+	"Schäferstraße")
+		echo "7003205"
+		;;
+	"Schwetzinger Straße")
+		echo "7003116"
+		;;
+	"Hagsfeld Storrenacker Mitte")
+		echo "7003110"
+		;;
+	"Storrenacker Nord")
+		echo "7003111"
+		;;
+	"Hagsfeld Storrenacker Süd")
+		echo "7003109"
+		;;
+	"Hagsfeld Süd")
+		echo "7000231"
+		;;
+	"Medersbuckel")
+		echo "7004307"
+		;;
+	"Hohenwettersbach Mitte")
+		echo "7004309"
+		;;
+	"Hohenwettersbach Rathaus")
+		echo "7004310"
+		;;
+	"Taglöhnergärten")
+		echo "7004312"
+		;;
+	"Am Kanalweg")
+		echo "7007304"
+		;;
+	"Andreas-Hofer-Straße")
+		echo "7006012"
+		;;
+	"Arbeitsagentur")
+		echo "7000064"
+		;;
+	"Augartenstraße")
+		echo "7000074"
+		;;
+	"August-Bebel-Straße")
+		echo "7001104"
+		;;
+	"Bannwaldallee")
+		echo "7000606"
+		;;
+	"Barbaraweg")
+		echo "7007019"
+		;;
+	"Barbarossaplatz")
+		echo "7005003"
+		;;
+	"Belchenplatz")
+		echo "7005205"
+		;;
+	"Benzstraße")
+		echo "7005515"
+		;;
+	"Berliner Straße")
+		echo "7007017"
+		;;
+	"Bernsteinstraße")
+		echo "7006209"
+		;;
+	"Binger Straße")
+		echo "7007412"
+		;;
+	"Birkenweg")
+		echo "7006006"
+		;;
+	"Blohnstraße")
+		echo "7006002"
+		;;
+	"Breite Straße")
+		echo "7005005"
+		;;
+	"Büchiger Allee")
+		echo "7003004"
+		;;
+	"Dammerstock")
+		echo "7001206"
+		;;
+	"Duale Hochschule")
+		echo "7000012"
+		;;
+	"Dunantstraße")
+		echo "7000310"
+		;;
+	"Karlsruhe Durlacher Tor / KIT-Campus Süd")
+		echo "7000003"
+		;;
+	"Durmersheimer Straße")
+		echo "7006205"
+		;;
+	"Ebertstraße")
+		echo "7000091"
+		;;
+	"Eckenerstraße")
+		echo "7000201"
+		;;
+	"Edelbergstraße")
+		echo "7006010"
+		;;
+	"Eichelbergstraße")
+		echo "7006208"
+		;;
+	"Emil-Gött-Straße")
+		echo "7003014"
+		;;
+	"Entenfang")
+		echo "7000051"
+		;;
+	"Erlenweg")
+		echo "7001211"
+		;;
+	"Ettlinger Tor")
+		echo "7000071"
+		;;
+	"Europahalle/Europabad")
+		echo "7000605"
+		;;
+	"Europaplatz (Kaiserstraße)")
+		echo "7000031"
+		;;
+	"Europaplatz (Karlstraße)")
+		echo "7000060"
+		;;
+	"Europaplatz (Sparkasse)")
+		echo "7000059"
+		;;
+	"Feierabendweg")
+		echo "7000523"
+		;;
+	"Frankenthaler Straße")
+		echo "7007405"
+		;;
+	"Gebhardstraße")
+		echo "7005004"
+		;;
+	"Germersheimer Straße")
+		echo "7007016"
+		;;
+	"Gottesauer Platz / BGV")
+		echo "7000006"
+		;;
+	"Griesbachstraße")
+		echo "7005513"
+		;;
+	"Grünwinkler Straße")
+		echo "7005007"
+		;;
+	"Händelstraße")
+		echo "7000044"
+		;;
+	"Hardecksiedlung")
+		echo "7000607"
+		;;
+	"Hauptbahnhof")
+		echo "7000090"
+		;;
+	"Hauptfriedhof")
+		echo "7000402"
+		;;
+	"Haus Bethlehem")
+		echo "7001106"
+		;;
+	"Hbf Vorplatz")
+		echo "7000089"
+		;;
+	"Heidehof")
+		echo "7007009"
+		;;
+	"Herrenstraße")
+		echo "7000099"
+		;;
+	"Hertzstraße")
+		echo "7000522"
+		;;
+	"Hirtenweg/Technologiepark")
+		echo "7000403"
+		;;
+	"Holtzstraße")
+		echo "7005509"
+		;;
+	"Hornisgrindestraße")
+		echo "7006007"
+		;;
+	"Hübschstraße")
+		echo "7000505"
+		;;
+	"Junker-u.-Ruh-Straße")
+		echo "7005514"
+		;;
+	"Kaiserplatz")
+		echo "7000036"
+		;;
+	"Kaiserslauterner Straße")
+		echo "7007013"
+		;;
+	"Kärcherstraße")
+		echo "7007021"
+		;;
+	"Karl-Wilhelm-Platz")
+		echo "7000401"
+		;;
+	"Karlstor")
+		echo "7000061"
+		;;
+	"Knielinger Allee")
+		echo "7001103"
+		;;
+	"Kolpingplatz")
+		echo "7000063"
+		;;
+	"Kongresszentrum")
+		echo "7000073"
+		;;
+	"Konzerthaus")
+		echo "7000510"
+		;;
+	"Kronenplatz (Fritz-Erler-Straße)")
+		echo "7000080"
+		;;
+	"Kronenplatz (Kaiserstraße)")
+		echo "7000002"
+		;;
+	"Kühler Krug")
+		echo "7000504"
+		;;
+	"Kunstakademie / Hochschule")
+		echo "7007003"
+		;;
+	"Kurt-Schumacher-Straße")
+		echo "7001105"
+		;;
+	"Kußmaulstraße")
+		echo "7000521"
+		;;
+	"Lameyplatz")
+		echo "7000058"
+		;;
+	"Landauer Straße")
+		echo "7007404"
+		;;
+	"Landesbausparkasse")
+		echo "7000604"
+		;;
+	"Landgrabenstraße")
+		echo "7005008"
+		;;
+	"Lessingstraße")
+		echo "7000507"
+		;;
+	"Lilienthalstraße")
+		echo "7000008"
+		;;
+	"Linkenheimer Tor")
+		echo "7007302"
+		;;
+	"Links der Alb")
+		echo "7005206"
+		;;
+	"Liststraße")
+		echo "7005516"
+		;;
+	"Lorenzstraße/ZKM")
+		echo "7005505"
+		;;
+	"Madenburgweg")
+		echo "7007018"
+		;;
+	"Marktplatz")
+		echo "7000001"
+		;;
+	"Mathystraße")
+		echo "7000062"
+		;;
+	"Maxau")
+		echo "7001700"
+		;;
+	"Karlsruhe Mühlburg West")
+		echo "7000103"
+		;;
+	"Mühlburger Feld")
+		echo "7000503"
+		;;
+	"Mühlburger Tor (Grashofstraße)")
+		echo "7000321"
+		;;
+	"Mühlburger Tor (Kaiserallee)")
+		echo "7000049"
+		;;
+	"Neckarplatz")
+		echo "7005203"
+		;;
+	"Neue Anlage Straße")
+		echo "7005006"
+		;;
+	"Neureuter Straße")
+		echo "7000524"
+		;;
+	"Nürnberger Straße")
+		echo "7005207"
+		;;
+	"Ostendstraße")
+		echo "7000622"
+		;;
+	"Otto-Sachs-Straße")
+		echo "7000508"
+		;;
+	"Pastor-Felke-Straße")
+		echo "7003003"
+		;;
+	"Petergraben")
+		echo "7005015"
+		;;
+	"Pfannkuchstraße")
+		echo "7000316"
+		;;
+	"Philipp-Reis-Straße")
+		echo "7000621"
+		;;
+	"Philippstraße")
+		echo "7000045"
+		;;
+	"Poststraße")
+		echo "7000098"
+		;;
+	"Rheinhafen")
+		echo "7000501"
+		;;
+	"Rheinhafen Nord")
+		echo "7000026"
+		;;
+	"Rheinhafenstraße")
+		echo "7000203"
+		;;
+	"Rintheimer Querallee")
+		echo "7003005"
+		;;
+	"Rintheimer Straße")
+		echo "7000311"
+		;;
+	"Rüppurrer Tor")
+		echo "7000085"
+		;;
+	"Schillerstraße")
+		echo "7000040"
+		;;
+	"Schloss Gottesaue")
+		echo "7000624"
+		;;
+	"Schloss Rüppurr")
+		echo "7001207"
+		;;
+	"Schützenhaus")
+		echo "7007303"
+		;;
+	"Schweigener Straße")
+		echo "7007014"
+		;;
+	"Schwimmschulweg")
+		echo "7006213"
+		;;
+	"Sinner (Durmersh. Straße)")
+		echo "7006008"
+		;;
+	"Sinner (Zeppelinstraße)")
+		echo "7006004"
+		;;
+	"Sophienstraße")
+		echo "7000602"
+		;;
+	"Karlsruhe St. Josefs-Kirche")
+		echo "7006206"
+		;;
+	"St. Vincentius Krankenhaus")
+		echo "7005508"
+		;;
+	"Städt. Klinikum Moltkestraße")
+		echo "7001101"
+		;;
+	"Stadtwerke")
+		echo "7000315"
+		;;
+	"Starckstraße")
+		echo "7000101"
+		;;
+	"Staufenbergweg")
+		echo "7006011"
+		;;
+	"Stephanienbad")
+		echo "7005202"
+		;;
+	"Straßesemannstraße")
+		echo "7007402"
+		;;
+	"Studentenhaus")
+		echo "7003002"
+		;;
+	"Karlsruhe Südendschule")
+		echo "7005504"
+		;;
+	"Synagoge")
+		echo "7000005"
+		;;
+	"Tivoli")
+		echo "7000084"
+		;;
+	"Trierer Straße")
+		echo "7007406"
+		;;
+	"Tullastraße / Verkehrsbetriebe")
+		echo "7000007"
+		;;
+	"Untermühlstraße")
+		echo "7000010"
+		;;
+	"Vogesenbrücke")
+		echo "7000102"
+		;;
+	"Volkswohnung / Staatstheater")
+		echo "7000072"
+		;;
+	"Wattkopfstraße")
+		echo "7006009"
+		;;
+	"Weiherhof")
+		echo "7005204"
+		;;
+	"Weinbrennerplatz")
+		echo "7000603"
+		;;
+	"Weinweg")
+		echo "7000009"
+		;;
+	"Weißenburger Straße")
+		echo "7007015"
+		;;
+	"Weißes Haus")
+		echo "7007305"
+		;;
+	"Welfenstraße")
+		echo "7006218"
+		;;
+	"Werderstraße")
+		echo "7000083"
+		;;
+	"Karlsruhe Westbahnhof Karlsruhe")
+		echo "7006005"
+		;;
+	"Wilhelm-Kolb-Straße")
+		echo "7007403"
+		;;
+	"Windeckstraße")
+		echo "7006215"
+		;;
+	"Wolfartsweierer Straße")
+		echo "7000623"
+		;;
+	"Yorckstraße")
+		echo "7000041"
+		;;
+	"ZKM")
+		echo "7000065"
+		;;
+	"Knielingen Bahnhof")
+		echo "7032586"
+		;;
+	"Bruchweg")
+		echo "7007505"
+		;;
+	"Eggensteiner Straße")
+		echo "7000106"
+		;;
+	"Egon-Eiermann-Allee")
+		echo "7000239"
+		;;
+	"Elsternweg")
+		echo "7007502"
+		;;
+	"Herweghstraße")
+		echo "7000105"
+		;;
+	"Husarenlager")
+		echo "7007413"
+		;;
+	"Jakob-Dörr-Straße")
+		echo "7007501"
+		;;
+	"Kolbengärten")
+		echo "7007503"
+		;;
+	"Landeckstraße")
+		echo "7007416"
+		;;
+	"Lassallestraße")
+		echo "7000526"
+		;;
+	"Max-Dortu-Straße")
+		echo "7007506"
+		;;
+	"Knielingen Bahnhof Knielingen")
+		echo "7032586"
+		;;
+	"Pionierstraße")
+		echo "7000238"
+		;;
+	"Reinmuthstraße")
+		echo "7007417"
+		;;
+	"Rheinbergstraße")
+		echo "7000107"
+		;;
+	"Siemens")
+		echo "7000104"
+		;;
+	"Siemensallee")
+		echo "7000525"
+		;;
+	"Sudetenstraße")
+		echo "7000237"
+		;;
+	"Mühlburg Bahnhof")
+		echo "7032587"
+		;;
+	"Adolf-Ehrmann-Bad")
+		echo "7001114"
+		;;
+	"Alte Kreisstraße")
+		echo "7007306"
+		;;
+	"Am Bachkanal")
+		echo "7007111"
+		;;
+	"Am Hubengut")
+		echo "7007307"
+		;;
+	"Am Zinken")
+		echo "7007110"
+		;;
+	"An der Trift")
+		echo "7007204"
+		;;
+	"Bachenweg")
+		echo "7007105"
+		;;
+	"Bärenweg")
+		echo "7001111"
+		;;
+	"Blankenlocher Weg")
+		echo "7007020"
+		;;
+	"Dammweg")
+		echo "7007113"
+		;;
+	"Donauschwabenstraße")
+		echo "7007206"
+		;;
+	"Flughafenstraße")
+		echo "7007012"
+		;;
+	"Forlenweg")
+		echo "7007207"
+		;;
+	"Neureut Friedhof")
+		echo "7007109"
+		;;
+	"Grünewaldstraße")
+		echo "7007202"
+		;;
+	"Heide")
+		echo "7000013"
+		;;
+	"Holbeinstraße")
+		echo "7007210"
+		;;
+	"Im Kleinen Bruch")
+		echo "7007112"
+		;;
+	"Neureut Kirche")
+		echo "7007108"
+		;;
+	"Kirchfeld")
+		echo "7001115"
+		;;
+	"Kirchfeld Fortuna")
+		echo "7007023"
+		;;
+	"Kirchfeld Nord")
+		echo "7007024"
+		;;
+	"Neureut Mitteltorstraße")
+		echo "7007107"
+		;;
+	"Moldaustraße")
+		echo "7007205"
+		;;
+	"Rosmarinweg")
+		echo "7000023"
+		;;
+	"Spöcker Straße")
+		echo "7007203"
+		;;
+	"Neureut Südschule")
+		echo "7007106"
+		;;
+	"Waldenserkirche")
+		echo "7007104"
+		;;
+	"Welschneureuter Straße")
+		echo "7001110"
+		;;
+	"Albert-Braun-Straße")
+		echo "7000608"
+		;;
+	"Badeniaplatz")
+		echo "7000611"
+		;;
+	"Bernhard-Lichtenberg-Straße")
+		echo "7005017"
+		;;
+	"Eugen-Geck-Straße")
+		echo "7005014"
+		;;
+	"Eva-Maria-Buch-Straße")
+		echo "7000612"
+		;;
+	"Johanna-Kirchner-Straße")
+		echo "7005013"
+		;;
+	"Rudolf-Breitscheid-Straße")
+		echo "7005012"
+		;;
+	"Wilhelm-Leuschner-Straße")
+		echo "7000610"
+		;;
+	"Realschule")
+		echo "7091006"
+		;;
+	"Oberreut Zentrum")
+		echo "7000609"
+		;;
+	"Im Kloth")
+		echo "7004514"
+		;;
+	"Palmbach Kirche")
+		echo "7004512"
+		;;
+	"Rudolf-Link-Straße")
+		echo "7004523"
+		;;
+	"Winterrot")
+		echo "7004513"
+		;;
+	"Forststraße")
+		echo "7000313"
+		;;
+	"Rintheim")
+		echo "7000314"
+		;;
+	"Sinsheimer Straße")
+		echo "7000404"
+		;;
+	"Battstraße")
+		echo "7001210"
+		;;
+	"Hegaustraße")
+		echo "7001214"
+		;;
+	"Heinrich-Heine-Ring")
+		echo "7001213"
+		;;
+	"Märchenring")
+		echo "7001216"
+		;;
+	"Ostendorfplatz")
+		echo "7001208"
+		;;
+	"Prinzenweg")
+		echo "7001215"
+		;;
+	"Tulpenstraße")
+		echo "7001209"
+		;;
+	"Auf der Römerstraße")
+		echo "7004517"
+		;;
+	"Gerberastraße")
+		echo "7002306"
+		;;
+	"Karlsbader Straße")
+		echo "7002307"
+		;;
+	"Stupferich Kirche")
+		echo "7004713"
+		;;
+	"Pfefferäcker")
+		echo "7004717"
+		;;
+	"Stupferich Rathaus")
+		echo "7004715"
+		;;
+	"Rebgärtenstraße")
+		echo "7004712"
+		;;
+	"Rieslingstraße")
+		echo "7004711"
+		;;
+	"Wiesentalstraße")
+		echo "7004714"
+		;;
+	"Breslauer Straße")
+		echo "7003008"
+		;;
+	"Elbinger Straße (Ost)")
+		echo "7003017"
+		;;
+	"Waldstadt Elbinger Straße (West)")
+		echo "7003011"
+		;;
+	"Europäische Schule")
+		echo "7003012"
+		;;
+	"Glogauer Straße")
+		echo "7000407"
+		;;
+	"Im Eichbäumle")
+		echo "7000406"
+		;;
+	"Jägerhaus")
+		echo "7000409"
+		;;
+	"Kolberger Straße")
+		echo "7003010"
+		;;
+	"Osteroder Straße")
+		echo "7000411"
+		;;
+	"Schneidemühler Straße")
+		echo "7003009"
+		;;
+	"Waldstadt Zentrum")
+		echo "7000408"
+		;;
+	"Wolfartsweier Mitte")
+		echo "7004508"
+		;;
+	"Nord")
+		echo "7004500"
+		;;
+	"Wolfartsweier Süd")
+		echo "7004800"
+		;;
+	esac
+}

@@ -1,0 +1,34 @@
+#compdef efa-bw
+
+local stops lines
+
+#stops=$(sed 's/^/"/' < /usr/share/efa-bw/stops | sed 's/$/" /' | tr -d '\n')
+lines=$(sed 's/$/ /' < /usr/share/efa-bw/lines | tr -d '\n')
+
+local -a args
+
+local curcontext="$curcontext" state line
+
+args=(
+	'(-h --help)'{-h,--help}'[display help message]'
+	'1: :->stop'
+	'2: :->line'
+	'*: :'
+)
+_arguments -s -S $args
+
+dir="/usr/share/efa-bw/stops/"
+
+case $state in
+line)
+	_values -s , 'lines' $(echo $lines)
+	;;
+stop)
+	ls $dir | while read i; do
+		stops=$(sed 's/^/"/' < "$dir$i" | sed 's/$/" /' | tr -d '\n')
+#		echo $stops
+		_arguments "*:$i:($stops)"
+	done
+	;;
+esac
+
