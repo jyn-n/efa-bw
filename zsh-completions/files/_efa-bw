@@ -2,7 +2,6 @@
 
 local stops lines
 
-#stops=$(sed 's/^/"/' < /usr/share/efa-bw/stops | sed 's/$/" /' | tr -d '\n')
 lines=$(sed 's/$/ /' < /usr/share/efa-bw/lines | tr -d '\n')
 
 local -a args
@@ -24,10 +23,14 @@ line)
 	_values -s , 'lines' $(echo $lines)
 	;;
 stop)
-	ls $dir | while read i; do
-		stops=$(sed 's/^/"/' < "$dir$i" | sed 's/$/" /' | tr -d '\n')
-#		echo $stops
-		_arguments "*:$i:($stops)"
+	_tags $(ls $dir)
+	while _tags; do
+		ls $dir | while read t; do
+			while read s; do
+				_requested $t expl $t compadd $s
+			done < $dir$t
+		done
+		#(( ret )) || break
 	done
 	;;
 esac
