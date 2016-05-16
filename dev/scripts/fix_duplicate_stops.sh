@@ -12,6 +12,6 @@ cat $1/* \
 	| while read l; do
 		file=$(echo $l | awk '{print $1}')
 		line=$(echo $l | awk '{print $2}')
-		sed -i "${line}s/^/$(namei $file | sed -n 's/^\W*-\W*//p') /" "$file"
+		sed -i "${line}s/^/$(basename $file) /" "$file"
 	done
 done

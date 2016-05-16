@@ -1,6 +1,6 @@
 #!/bin/sh
 
-filename=$(namei $1 | sed -n 's/^\W*-\W*//p')
+filename=$(basename $1)
 
 sed -e "s/^/${filename} /" -e 's/^/"/' -e 's/$/"/' < $1 \
 | while read l; do 
