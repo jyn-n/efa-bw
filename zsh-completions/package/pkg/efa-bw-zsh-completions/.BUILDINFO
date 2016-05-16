@@ -64,7 +64,6 @@ installed = dmenu-4.6-1
 installed = dnssec-anchors-20150403-1
 installed = e2fsprogs-1.42.13-1
 installed = efa-bw-0.2-1
-installed = efa-bw-zsh-completions-0.1-1
 installed = efibootmgr-0.12-1
 installed = efivar-0.21-1
 installed = elfutils-0.166-1
